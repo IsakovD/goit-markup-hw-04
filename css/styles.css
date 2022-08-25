@@ -22,6 +22,7 @@
 	/* bg colors */
 	--main-bg-color: #fff;
 	--footer-bg-color: #2f303a;
+	--hero-bg-color :rgba(47, 48, 58, 0.4);
 
 	/* others */
 	--portfolio-shadow-box: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -106,10 +107,14 @@ button {
 }
 
 /* лише для реалізації стилів у футері та герої, бо буде з білим фоном зливатися */
-.background-footer,
-.background-hero {
+.background-footer {
+	max-width: 1600px;
 	background-color: var(--footer-bg-color);
+	margin-right: auto;
+	margin-left: auto;
 }
+
+
 
 .background-hero {
 	padding: 200px 0;
@@ -260,6 +265,24 @@ button {
 }
 /* унікальний контент */
 
+.overlay {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(to right, var(--hero-bg-color), var(--hero-bg-color)), url('../images/index/hero-bg.jpg');
+	background-color: var(--footer-bg-color);
+	
+}
+
+.icon-svg {
+	width: 16px;
+	height: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .hero {
 	width: 686px;
 	margin-left: auto;
@@ -364,7 +387,6 @@ button {
 	border: 1px solid var(--box-line-color);
 	border-top: none;
 }
-
 
 .portfolio-title {
 	margin-bottom: 4px;
